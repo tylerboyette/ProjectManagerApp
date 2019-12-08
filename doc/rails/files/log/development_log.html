@@ -1950,7 +1950,7 @@ as HTML</p>
 [1m[36mTenant Load (1.1ms)[0m  [1m[34mSELECT  &quot;tenants&quot;.* FROM &quot;tenants&quot; WHERE (tenants.tenant_id IS NULL) AND &quot;tenants&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 1], [&quot;LIMIT&quot;, 1]]
 [1m[36mProject Exists (42.2ms)[0m  [1m[34mSELECT  1 AS one FROM &quot;projects&quot; WHERE &quot;projects&quot;.&quot;title&quot; = $1 LIMIT $2[0m  [[&quot;title&quot;, &quot;New project details&quot;], [&quot;LIMIT&quot;, 1]]
 [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;projects&quot; WHERE &quot;projects&quot;.&quot;tenant_id&quot; = $1[0m  [[&quot;tenant_id&quot;, 1]]
-[1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO &quot;projects&quot; (&quot;title&quot;, &quot;details&quot;, &quot;expected_completion_date&quot;, &quot;tenant_id&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ($1, $2, $3, $4, $5, $6) RETURNING &quot;id&quot;[0m  [[&quot;title&quot;, &quot;New project details&quot;], [&quot;details&quot;, &quot;Test&quot;], [&quot;expected_completion_date&quot;, &quot;2018-03-20&quot;], [&quot;tenant_id&quot;, 1], [&quot;created_at&quot;, &quot;2018-03-03 02:58:31.745592&quot;], [&quot;updated_at&quot;, &quot;2018-03-03 02:58:31.745592&quot;]]
+[1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO &quot;projects&quot; (&quot;title&quot;, &quot;details&quot;, &quot;expected_completion_date&quot;, &quot;tenant_id&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ($1, $2, $3, $4, $5, $6) RETURNING &quot;id&quot;[0m  [[&quot;title&quot;, &quot;New project details&quot;], [&quot;details&quot;, &quot;Test&quot;], [&quot;expected_completion_date&quot;, &quot;2018-03-20&quot;], [&quot;tenant_id&quot;, 1], [&quot;created_at&quot;, &quot;2018-03-03 02:58:31.792&quot;], [&quot;updated_at&quot;, &quot;2018-03-03 02:58:31.792&quot;]]
 [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m</code></pre>
 
 <p>Redirected to <a href="http://localhost:3000">localhost:3000</a>/ Completed
@@ -3024,7 +3024,7 @@ Rendered common/_navbar.html.erb (1.3ms)</code></pre>
 <p>Completed 200 OK in 386ms (Views: 372.2ms | ActiveRecord: 1.9ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: home#index Memory usage:
-4550612 | PID: 44243 Instantiation Breakdown: Total: 3 | Tenant: 2 | User:
+0612 | PID: 44243 Instantiation Breakdown: Total: 3 | Tenant: 2 | User:
 1 <a href="../../classes/Oink.html">Oink</a> Log Entry Complete Started GET
 “/tenants/2/projects/new” for 127.0.0.1 at 2018-03-03 01:01:35 -0500
 Processing by <a
@@ -3046,7 +3046,7 @@ Rendered common/_navbar.html.erb (1.6ms)</code></pre>
 <p>Completed 200 OK in 298ms (Views: 270.0ms | ActiveRecord: 2.0ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: projects#new Memory
-usage: 4556072 | PID: 44243 Instantiation Breakdown: Total: 4 | Tenant: 2 |
+usage: 6072 | PID: 44243 Instantiation Breakdown: Total: 4 | Tenant: 2 |
 User: 1 | Project: 1 <a href="../../classes/Oink.html">Oink</a> Log Entry
 Complete Started POST “/tenants/2/projects” for 127.0.0.1 at 2018-03-03
 01:01:44 -0500 Processing by <a
@@ -3071,7 +3071,7 @@ as HTML</p>
 302 Found in 75ms (ActiveRecord: 45.4ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: projects#create Memory
-usage: 4556072 | PID: 44243 Instantiation Breakdown: Total: 5 | Tenant: 3 |
+usage: 6072 | PID: 44243 Instantiation Breakdown: Total: 5 | Tenant: 3 |
 User: 1 | Project: 1 <a href="../../classes/Oink.html">Oink</a> Log Entry
 Complete Started GET “/” for 127.0.0.1 at 2018-03-03 01:01:44 -0500
 Processing by <a
@@ -3095,7 +3095,7 @@ Rendered common/_navbar.html.erb (1.7ms)</code></pre>
 <p>Completed 200 OK in 282ms (Views: 267.1ms | ActiveRecord: 2.5ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: home#index Memory usage:
-4556072 | PID: 44243 Instantiation Breakdown: Total: 4 | Tenant: 2 | User:
+6072 | PID: 44243 Instantiation Breakdown: Total: 4 | Tenant: 2 | User:
 1 | Project: 1 <a href="../../classes/Oink.html">Oink</a> Log Entry
 Complete Started GET “/tenants/2/projects/2” for 127.0.0.1 at 2018-03-03
 01:01:46 -0500 Processing by <a
@@ -3118,7 +3118,7 @@ Rendered common/_navbar.html.erb (1.9ms)</code></pre>
 <p>Completed 200 OK in 280ms (Views: 252.6ms | ActiveRecord: 2.3ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: projects#show Memory
-usage: 4556072 | PID: 44243 Instantiation Breakdown: Total: 5 | Tenant: 3 |
+usage: 6072 | PID: 44243 Instantiation Breakdown: Total: 5 | Tenant: 3 |
 User: 1 | Project: 1 <a href="../../classes/Oink.html">Oink</a> Log Entry
 Complete Started GET “/tenants/2/projects/2” for 127.0.0.1 at 2018-03-03
 01:04:46 -0500</p>
@@ -3375,7 +3375,7 @@ Rendered common/_navbar.html.erb (1.5ms)</code></pre>
 <p>Completed 200 OK in 648ms (Views: 571.9ms | ActiveRecord: 2.8ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: projects#show Memory
-usage: 4554196 | PID: 44738 Instantiation Breakdown: Total: 7 | Tenant: 3 |
+usage: 4196 | PID: 44738 Instantiation Breakdown: Total: 7 | Tenant: 3 |
 Artifact: 2 | User: 1 | Project: 1 <a
 href="../../classes/Oink.html">Oink</a> Log Entry Complete Started GET
 “/artifacts/1” for 127.0.0.1 at 2018-03-03 01:13:50 -0500 Processing by <a
@@ -3396,7 +3396,7 @@ Rendered common/_navbar.html.erb (1.5ms)</code></pre>
 <p>Completed 200 OK in 1955ms (Views: 1891.4ms | ActiveRecord: 1.9ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: artifacts#show Memory
-usage: 4554196 | PID: 44738 Instantiation Breakdown: Total: 3 | User: 1 |
+usage: 4196 | PID: 44738 Instantiation Breakdown: Total: 3 | User: 1 |
 Tenant: 1 | Artifact: 1 <a href="../../classes/Oink.html">Oink</a> Log
 Entry Complete</p>
 
@@ -4785,7 +4785,7 @@ my account&lt;/a&gt;&lt;/p&gt;</p>
 <p>Completed 302 Found in 3661ms (ActiveRecord: 66.7ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: registrations#create
-Memory usage: 4559164 | PID: 48961 Instantiation Breakdown: Total: 10 |
+Memory usage: 9164 | PID: 48961 Instantiation Breakdown: Total: 10 |
 Tenant: 4 | User: 2 | Member: 2 | Payment: 1 | HABTM_Users: 1 <a
 href="../../classes/Oink.html">Oink</a> Log Entry Complete Started GET “/”
 for 127.0.0.1 at 2018-03-03 03:37:17 -0500 Processing by <a
@@ -4799,10 +4799,10 @@ Rendered common/_navbar.html.erb (1.4ms)</code></pre>
 <p>Completed 200 OK in 748ms (Views: 723.2ms | ActiveRecord: 0.0ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: home#index Memory usage:
-4559164 | PID: 48961 Instantiation Breakdown: Total: 0 <a
+9164 | PID: 48961 Instantiation Breakdown: Total: 0 <a
 href="../../classes/Oink.html">Oink</a> Log Entry Complete Started GET
 “/meeting1.png” for 127.0.0.1 at 2018-03-03 03:37:18 -0500 Memory usage:
-4559164 | PID: 48961 Instantiation Breakdown: Total: 0 <a
+9164 | PID: 48961 Instantiation Breakdown: Total: 0 <a
 href="../../classes/Oink.html">Oink</a> Log Entry Complete</p>
 
 <p>ActionController::RoutingError (No route matches [GET] “/meeting1.png”):</p>
@@ -4861,7 +4861,7 @@ as HTML</p>
 145ms (ActiveRecord: 86.8ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: confirmations#show
-Memory usage: 4558936 | PID: 48961 Instantiation Breakdown: Total: 3 |
+Memory usage: 8936 | PID: 48961 Instantiation Breakdown: Total: 3 |
 User: 2 | Tenant: 1 <a href="../../classes/Oink.html">Oink</a> Log Entry
 Complete Started GET “/” for 127.0.0.1 at 2018-03-03 03:37:41 -0500
 Processing by <a
@@ -4883,7 +4883,7 @@ Rendered common/_navbar.html.erb (1.7ms)</code></pre>
 <p>Completed 200 OK in 411ms (Views: 344.5ms | ActiveRecord: 4.3ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: home#index Memory usage:
-4559960 | PID: 48961 Instantiation Breakdown: Total: 3 | Tenant: 2 | User:
+9960 | PID: 48961 Instantiation Breakdown: Total: 3 | Tenant: 2 | User:
 1 <a href="../../classes/Oink.html">Oink</a> Log Entry Complete Started GET
 “/” for 127.0.0.1 at 2018-03-03 04:22:58 -0500</p>
 
@@ -5981,7 +5981,7 @@ Rendered projects/_form.html.erb (103.4ms)
 Rendered projects/new.html.erb within layouts/application (125.2ms)
 Rendered common/_navbar.html.erb (1.5ms)</code></pre>
 
-<p>Completed 200 OK in 455ms (Views: 424.1ms | ActiveRecord: 3.2ms)</p>
+<p>Completed 200 OK in ms (Views: 424.1ms | ActiveRecord: 3.2ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: projects#new Memory
 usage: 4511160 | PID: 52648 Instantiation Breakdown: Total: 4 | Tenant: 2 |
@@ -6432,7 +6432,7 @@ my account&lt;/a&gt;&lt;/p&gt;</p>
 <p>Completed 302 Found in 1923ms (ActiveRecord: 62.5ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: registrations#create
-Memory usage: 4554044 | PID: 52908 Instantiation Breakdown: Total: 9 |
+Memory usage: 4044 | PID: 52908 Instantiation Breakdown: Total: 9 |
 Tenant: 4 | User: 2 | Member: 2 | HABTM_Users: 1 <a
 href="../../classes/Oink.html">Oink</a> Log Entry Complete Started GET “/”
 for 127.0.0.1 at 2018-03-03 05:22:50 -0500 Processing by <a
@@ -6446,10 +6446,10 @@ Rendered common/_navbar.html.erb (2.4ms)</code></pre>
 <p>Completed 200 OK in 388ms (Views: 375.5ms | ActiveRecord: 0.0ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: home#index Memory usage:
-4555068 | PID: 52908 Instantiation Breakdown: Total: 0 <a
+5068 | PID: 52908 Instantiation Breakdown: Total: 0 <a
 href="../../classes/Oink.html">Oink</a> Log Entry Complete Started GET
 “/meeting1.png” for 127.0.0.1 at 2018-03-03 05:22:50 -0500 Memory usage:
-4555068 | PID: 52908 Instantiation Breakdown: Total: 0 <a
+5068 | PID: 52908 Instantiation Breakdown: Total: 0 <a
 href="../../classes/Oink.html">Oink</a> Log Entry Complete</p>
 
 <p>ActionController::RoutingError (No route matches [GET] “/meeting1.png”):</p>
@@ -6495,7 +6495,7 @@ Rendered common/_navbar.html.erb (3.6ms)</code></pre>
 <p>Completed 200 OK in 373ms (Views: 370.4ms | ActiveRecord: 0.0ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: milia/sessions#new
-Memory usage: 4556940 | PID: 52908 Instantiation Breakdown: Total: 1 |
+Memory usage: 6940 | PID: 52908 Instantiation Breakdown: Total: 1 |
 User: 1 <a href="../../classes/Oink.html">Oink</a> Log Entry Complete
 Started GET
 “/users/confirmation?confirmation_token=ddCgLx7yPE9Ka1oeG6R1&amp;amp;locale=en”
@@ -6524,7 +6524,7 @@ href="http://localhost:3000/tenants/1/projects/1">localhost:3000/tenants/1/proje
 Completed 302 Found in 165ms (ActiveRecord: 53.5ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: confirmations#show
-Memory usage: 4556940 | PID: 52908 Instantiation Breakdown: Total: 3 |
+Memory usage: 6940 | PID: 52908 Instantiation Breakdown: Total: 3 |
 User: 2 | Tenant: 1 <a href="../../classes/Oink.html">Oink</a> Log Entry
 Complete Started GET “/tenants/1/projects/1” for 127.0.0.1 at 2018-03-03
 05:23:05 -0500 Processing by <a
@@ -6669,7 +6669,7 @@ Rendered common/_navbar.html.erb (2.5ms)</code></pre>
 <p>Completed 200 OK in 395ms (Views: 384.1ms | ActiveRecord: 1.9ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: home#index Memory usage:
-4557964 | PID: 52908 Instantiation Breakdown: Total: 3 | Tenant: 2 | User:
+7964 | PID: 52908 Instantiation Breakdown: Total: 3 | Tenant: 2 | User:
 1 <a href="../../classes/Oink.html">Oink</a> Log Entry Complete Started GET
 “/” for 127.0.0.1 at 2018-03-03 05:23:59 -0500 Processing by <a
 href="../../classes/HomeController.html#method-i-index">HomeController#index</a>
@@ -6691,7 +6691,7 @@ Rendered common/_navbar.html.erb (2.6ms)</code></pre>
 <p>Completed 200 OK in 377ms (Views: 365.6ms | ActiveRecord: 1.9ms)</p>
 
 <p><a href="../../classes/Oink.html">Oink</a> Action: home#index Memory usage:
-4558988 | PID: 52908 Instantiation Breakdown: Total: 3 | Tenant: 2 | User:
+8988 | PID: 52908 Instantiation Breakdown: Total: 3 | Tenant: 2 | User:
 1 <a href="../../classes/Oink.html">Oink</a> Log Entry Complete Started GET
 “/users/confirmation?confirmation_token=ddCgLx7yPE9Ka1oeG6R1&amp;amp;locale=en”
 for 127.0.0.1 at 2018-03-03 05:24:04 -0500 Processing by <a
