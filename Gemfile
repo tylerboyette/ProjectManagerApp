@@ -27,7 +27,7 @@ gem 'therubyracer', platforms: :ruby
 # rdoc html with javascript search index. (https://github.com/zzak/sdoc)
 gem 'sdoc', '~> 0.4.0', group: :doc
 # An elegant, structured (X)HTML/XML templating engine. (http://haml.info/)
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 # An elegant, structured (X)HTML/XML templating engine. (http://haml.info/)
 gem 'haml'
 # Devise Bootstrap views with i18n support.
