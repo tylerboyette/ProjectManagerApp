@@ -15,7 +15,7 @@ gem 'pg', '~> 0.18'
 # Flexible authentication solution for Rails with Warden (https://github.com/plataformatec/devise)
 gem 'devise', '~> 4.2'
 # Puma is a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications (http://puma.io)
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 4.3'
 # Ruby CoffeeScript Compiler (http://github.com/josh/ruby-coffee-script)
 gem 'coffee-script', '~> 2.4', '>= 2.4.1'
 # Sass adapter for the Rails asset pipeline. (https://github.com/rails/sass-rails)
